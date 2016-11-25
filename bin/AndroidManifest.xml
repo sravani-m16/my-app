@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techfort.attendancesystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+         android:theme="@android:style/Theme.Black.NoTitleBar"
+        >
+        <activity
+            android:name="com.techfort.attendancesystem.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.DashBoardActivity"
+            android:label="@string/title_activity_dash_board" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.MessagingAcvitvity"
+            android:label="@string/title_activity_messaging_acvitvity" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.NewMessage"
+            android:label="@string/title_activity_new_message" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.MailingSetterActivity"
+            android:label="@string/title_activity_mailing_setter" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.AttendanceActivity"
+            android:label="@string/title_activity_attendance" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.SheetActivity"
+            android:label="@string/title_activity_sheet" >
+        </activity>
+        <activity android:name="com.techfort.attendancesystem.csvtry" >
+        </activity>
+        <activity android:name="com.techfort.attendancesystem.Profile" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.Website"
+            android:label="@string/title_activity_website" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.AllMessage"
+            android:label="@string/title_activity_all_message" >
+        </activity>
+        <activity
+            android:name="com.techfort.attendancesystem.SelectedMessage"
+            android:label="@string/title_activity_selected_message" >
+        </activity>
+    </application>
+
+</manifest>
